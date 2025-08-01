@@ -1,0 +1,21 @@
+.titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+
+  background-color: rgb(46, 53, 56);
+  padding: 1rem 1.5rem;
+}
+
+.titulo svg {
+  color: #f4f2ef;
+  width: 2rem;
+  height: 2rem;
+}
+
+.titulo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}

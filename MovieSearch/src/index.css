@@ -1,0 +1,18 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: #3b6566;
+  background: linear-gradient(
+    180deg,
+    rgba(59, 101, 102, 1) 0%,
+    rgba(168, 153, 142, 1) 50%,
+    rgba(166, 152, 141, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

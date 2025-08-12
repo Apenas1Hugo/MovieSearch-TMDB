@@ -1,0 +1,62 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 3rem;
+  width: 100%;
+  background-color: rgb(46, 53, 56);
+  color: #f4f2ef;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  z-index: 10;
+}
+footer > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer p {
+  margin: 0;
+  color: rgb(224, 225, 221);
+  font-size: 1rem;
+  margin-left: 10px;
+}
+footer > div > a:first-of-type {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(224, 225, 221);
+  text-decoration: none;
+}
+footer > div > div {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 15px;
+}
+
+footer a svg {
+  color: #f4f2ef;
+  width: 1.25em;
+  height: 1.25em;
+}
+footer a span {
+  margin-left: 0.25rem;
+  color: rgb(224, 225, 221);
+}
+@media (max-width: 600px) {
+  footer > div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  footer > div > a:first-of-type,
+  footer > div > div {
+    margin-left: 0;
+  }
+}
+footer a:hover span,
+footer a:hover svg {
+  color: gray;
+}

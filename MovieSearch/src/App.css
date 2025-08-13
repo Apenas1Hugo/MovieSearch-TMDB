@@ -1,0 +1,22 @@
+.Populares-title {
+  
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  
+  
+  color: #E0E1DD;
+  margin: 1.5rem 1rem 1rem;
+  
+  
+  text-align: center;
+  
+ 
+  text-shadow: 0 2px 4px rgba(13, 27, 42, 0.5);
+}
+@media (max-width: 600px) {
+  .Populares-title {
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem 0.75rem;
+  }
+}

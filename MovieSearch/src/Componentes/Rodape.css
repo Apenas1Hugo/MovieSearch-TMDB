@@ -48,7 +48,7 @@ footer a span {
 
 footer a:hover span,
 footer a:hover svg {
-  color: gray;
+  color: #a83238;;
 }
 @media (max-width: 600px) {
   footer > div {

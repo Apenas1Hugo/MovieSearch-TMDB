@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 .titulo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   justify-content: center;
-
+  font-family: 'Playfair Display', serif;
   background-color: rgb(46, 53, 56);
   padding: 1rem 1.5rem;
 }
 
 .titulo svg {
-  color: #f4f2ef;
+  color: #a83238;
   width: 2rem;
   height: 2rem;
 }
@@ -18,4 +19,7 @@
   margin: 0;
   font-size: 1.5rem;
   color: white;
+}
+.titulo h1:hover{
+  color:#a83238;
 }

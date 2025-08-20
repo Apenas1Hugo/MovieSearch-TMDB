@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+.movie-search-bar {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #2e3538;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.movie-search-bar__title {
+  color: #f4f2ef;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Comic Neue', cursive;
+  text-align: center;
+}
+
+.movie-search-bar__controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.movie-search-bar__input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #f4f2ef;
+  color: #2e3538;
+  outline: none;
+}
+
+.movie-search-bar__input::placeholder {
+  color: #888;
+}
+
+.movie-search-bar__button {
+  background-color: #85242A;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  color: #f4f2ef;
+}
+
+.movie-search-bar__button:hover {
+  background-color: #a83238;
+}

@@ -1,16 +1,13 @@
 .populares-container {
   display: flex;
   overflow-x: auto;
-  /* reduzindo gap e padding */
   gap: 0.75rem;
   padding: 0.5rem;
-  /* centraliza e limita a largura máxima */
   max-width: 90vw;
   margin: 10px auto; 
   box-sizing: border-box;
   background-color: rgb(46, 53, 56);
   border-radius: 10px;
-  margin-bottom: 50px;
 }
 
 

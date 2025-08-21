@@ -1,14 +1,12 @@
 footer {
-  position: fixed;
   bottom: 0;
   left: 0;
-  margin-top: 3rem;
+  margin-top: 50px;
   width: 100%;
   background-color: rgb(46, 53, 56);
   color: #f4f2ef;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  z-index: 10;
 }
 footer > div {
   display: flex;

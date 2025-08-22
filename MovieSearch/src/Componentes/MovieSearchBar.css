@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
 .movie-search-bar {
   width: 100%;
   max-width: 600px;
@@ -13,13 +13,15 @@
   color: #f4f2ef;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  font-family: 'Comic Neue', cursive;
+  font-size: clamp(1.25rem, 4vw, 1.5rem);
+  font-family: "Comic Neue", cursive;
   text-align: center;
 }
 
 .movie-search-bar__controls {
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .movie-search-bar__input {
@@ -31,6 +33,7 @@
   background-color: #f4f2ef;
   color: #2e3538;
   outline: none;
+  min-width: 0;
 }
 
 .movie-search-bar__input::placeholder {
@@ -38,7 +41,7 @@
 }
 
 .movie-search-bar__button {
-  background-color: #85242A;
+  background-color: #85242a;
   border: none;
   border-radius: 6px;
   padding: 0.75rem;
@@ -53,3 +56,12 @@
 .movie-search-bar__button:hover {
   background-color: #a83238;
 }
+@media (max-width: 600px) {
+  .movie-search-bar {
+    width: 85%;
+    margin: 0.5rem auto;
+    max-width: none;
+  }
+}
+
+/* parte do resultado da api*/

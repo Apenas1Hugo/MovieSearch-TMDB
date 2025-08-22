@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { TbWorldSearch } from "react-icons/tb";
 import "./MovieSearchBar.css";
+import "./MovieSearchResult.css";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const BASE_URL = "https://api.themoviedb.org/3";
@@ -24,9 +25,8 @@ const MovieSearchBar = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data.results && data.results.length > 0) {
+        if (data.results && data.results.length) {
           const first = data.results[0];
-
           setMovie({
             title: first.title,
             synopsis: first.overview,
@@ -34,7 +34,6 @@ const MovieSearchBar = () => {
               ? `${IMG_BASE_URL}${first.poster_path}`
               : null,
           });
-
           setError(false);
           setMessage("Era isso que procurava?");
         } else {
@@ -51,49 +50,48 @@ const MovieSearchBar = () => {
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      searchMovie();
-    }
+    if (e.key === "Enter") searchMovie();
   };
 
   return (
-    <div className="movie-search-bar">
-      <h2 className="movie-search-bar__title">{message}</h2>
-      <div className="movie-search-bar__controls">
-        <input
-          type="text"
-          className="movie-search-bar__input"
-          placeholder="digite o nome do filme"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={handleKeyDown}
-        />
-        <button
-          className="movie-search-bar__button"
-          onClick={searchMovie}
-        >
-          <TbWorldSearch size={20} />
-        </button>
+    <>
+      <div className="movie-search-bar">
+        <h2 className="movie-search-bar__title">{message}</h2>
+        <div className="movie-search-bar__controls">
+          <input
+            type="text"
+            className="movie-search-bar__input"
+            placeholder="digite o nome do filme"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={handleKeyDown}
+          />
+          <button
+            className="movie-search-bar__button"
+            onClick={searchMovie}
+          >
+            <TbWorldSearch size={20} />
+          </button>
+        </div>
       </div>
-
       {movie && !error && (
-        <div className="movie-search-bar__result">
+        <div className="movie-search-result">
           {movie.poster && (
             <img
               src={movie.poster}
               alt={movie.title}
-              className="movie-search-bar__poster"
+              className="movie-search-result__poster"
             />
           )}
-          <h3 className="movie-search-bar__result-title">
+          <h3 className="movie-search-result__title">
             {movie.title}
           </h3>
-          <p className="movie-search-bar__result-synopsis">
+          <p className="movie-search-result__synopsis">
             {movie.synopsis}
           </p>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

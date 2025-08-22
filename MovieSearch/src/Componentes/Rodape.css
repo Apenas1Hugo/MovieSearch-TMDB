@@ -1,7 +1,7 @@
 footer {
   bottom: 0;
   left: 0;
-  margin-top: 50px;
+  margin-top: 90px;
   width: 100%;
   background-color: rgb(46, 53, 56);
   color: #f4f2ef;
@@ -60,5 +60,10 @@ footer a:hover svg {
   footer > div > a:first-of-type,
   footer > div > div {
     margin: 0;
+  }
+}
+@media (max-width: 650px) {
+  footer {
+    margin-top: 120px;
   }
 }

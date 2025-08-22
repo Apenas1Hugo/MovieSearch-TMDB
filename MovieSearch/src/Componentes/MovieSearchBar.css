@@ -56,12 +56,11 @@
 .movie-search-bar__button:hover {
   background-color: #a83238;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .movie-search-bar {
+    
     width: 85%;
     margin: 0.5rem auto;
     max-width: none;
   }
 }
-
-/* parte do resultado da api*/

@@ -6,7 +6,7 @@ const Populares = () => {
   useEffect(() => {
     const fetchPopularMovies = async () => {
       try {
-        const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+        const API_KEY = "5404b2e0ff2b3428404dddef494197e5";
         const res = await fetch(
           `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=pt-BR&page=1`
         );

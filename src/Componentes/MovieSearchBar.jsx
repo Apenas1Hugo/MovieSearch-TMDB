@@ -3,7 +3,7 @@ import { TbWorldSearch } from "react-icons/tb";
 import "./MovieSearchBar.css";
 import "./MovieSearchResult.css";
 
-const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+const API_KEY = "5404b2e0ff2b3428404dddef494197e5";
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMG_BASE_URL = "https://image.tmdb.org/t/p/w500";
 

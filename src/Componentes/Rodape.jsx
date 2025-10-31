@@ -29,7 +29,7 @@ const Rodape = () => {
               <FaEnvelope />
             </a>
             <a //Linkedin
-              href=" "
+              href="https://www.linkedin.com/in/hugo-rodrigues-moura1"
               target="_blank"
               rel="noopener noreferrer"
             >

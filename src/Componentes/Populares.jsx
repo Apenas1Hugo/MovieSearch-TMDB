@@ -11,7 +11,7 @@ const Populares = () => {
           `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=pt-BR&page=1`
         );
         const data = await res.json();
-        setMovies(data.results.slice(0, 10)); //busacando 10 filmes
+        setMovies(data.results.slice(0, 20)); //buscando 20 filmes
       } catch (err) {
         console.error("Erro ao buscar filmes populares:", err);
       }

@@ -1,12 +1,73 @@
-# React + Vite
+# MovieSearch TMDB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição do projeto
 
-Currently, two official plugins are available:
+MovieSearch TMDB é uma aplicação web desenvolvida com React e Vite para pesquisar filmes e consultar títulos mais populares utilizando a API do TMDB. A interface foi criada para oferecer uma experiência simples, rápida e visualmente organizada para o usuário.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## O que o programa faz
 
-## Expanding the ESLint configuration
+O programa permite:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Buscar filmes pelo nome;
+- Exibir resultados de filmes relacionados à pesquisa;
+- Mostrar uma seção com filmes populares;
+- Apresentar a interface em português brasileiro;
+- Consumir dados em tempo real por meio da API do TMDB.
+
+## Tecnologias utilizadas
+
+![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat&logo=react)
+![Vite](https://img.shields.io/badge/Vite-7.0.4-646CFF?style=flat&logo=vite)
+![React DOM](https://img.shields.io/badge/React%20DOM-19.1.0-61DAFB?style=flat&logo=react)
+![React Icons](https://img.shields.io/badge/React%20Icons-5.5.0-FF5A5F?style=flat)
+![ESLint](https://img.shields.io/badge/ESLint-9.30.1-4B32C3?style=flat&logo=eslint)
+![TMDB API](https://img.shields.io/badge/TMDB-API-01B4E4?style=flat)
+
+### Versões principais
+
+- React: 19.1.0
+- React DOM: 19.1.0
+- Vite: 7.0.4
+- React Icons: 5.5.0
+- ESLint: 9.30.1
+- gh-pages: 6.3.0
+
+## Estrutura das pastas do projeto
+
+```text
+src
+│
+├── App.jsx
+│   └── Componente principal que monta a interface da aplicação
+│
+├── App.css
+│   └── Estilos principais da aplicação
+│
+├── main.jsx
+│   └── Arquivo de entrada do React/Vite
+│
+├── assets/
+│   └── Arquivos estáticos e imagens utilizadas no projeto
+│
+├── Componentes/
+│   ├── MovieSearchBar.jsx
+│   │   └── Componente da barra de pesquisa
+│   ├── MovieSearchBar.css
+│   │   └── Estilos da barra de pesquisa
+│   ├── Populares.jsx
+│   │   └── Exibe a lista de filmes populares
+│   ├── Populares.css
+│   │   └── Estilos da seção de filmes populares
+│   ├── Rodape.jsx
+│   │   └── Componente do rodapé da aplicação
+│   ├── Rodape.css
+│   │   └── Estilos do rodapé
+│   ├── Titulo.jsx
+│   │   └── Componente do cabeçalho da aplicação
+│   └── Titulo.css
+│       └── Estilos do cabeçalho
+│
+└── services/
+    └── tmdbFetch.js
+        └── Serviço responsável por realizar requisições à API do TMDB
+```
